@@ -45,7 +45,7 @@ password = getpass()
 
 conn_str = "mysql+pymysql://root:{}@localhost:3306/ClassicModels".format(password)
 
-%sql {conn_str}
+%sql $conn_str
 ```
 ```python
 %sql SELECT officeCode, city, phone FROM offices;
