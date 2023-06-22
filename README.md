@@ -1,379 +1,196 @@
 # Data Science Introduction
 
-This repository serves as an introduction to the field of data science, covering fundamental concepts, processes, and tools. It's a great starting point for anyone interested in the field, whether you're a novice data enthusiast, a budding data scientist, or an experienced professional looking to refresh your knowledge.
-<br>
-<br>
+This repository provides an introduction to the field of data science, covering fundamental concepts, processes, and tools. It is designed to be a valuable resource for individuals at all levels of expertise, whether you are a novice data enthusiast, a budding data scientist, or an experienced professional looking to refresh your knowledge.
 
-### Data science
-Coding, statistics, domain expertise ----> Data science
+## Data Science
 
-Coding:
-- gather, prepare
-- stats (R, Python)
-- databases (SQL)
-- command line (bash)
-- search engines (regex)
+Data science encompasses the integration of coding, statistics, and domain expertise to extract valuable insights and knowledge from data. The key components of data science include:
 
-Math:
-- probability, algebra, regression
+- Coding: Gathering and preparing data, performing statistical analysis using programming languages such as R and Python, working with databases using SQL, utilizing command line tools, and leveraging search engines through regular expressions.
+- Math: Understanding mathematical concepts such as probability, algebra, and regression to analyze data effectively.
+- Domain Expertise: Possessing expertise in a specific field, understanding the goals, methods, and constraints related to that domain.
 
-Domain expertise:
-- expertise in the field
-- goal, methods and constraints
+![Data Science Components](https://i.imgur.com/KT8f09M.png)
 
-![](https://i.imgur.com/KT8f09M.png)
+Different roles in data science require varying skills and knowledge. Some of these roles include:
 
-- ML (coding and math without domain expertise); black box models
-- Research (math and domain without coding); data is structured; effort is in method and in interpretation
-- Danger zone (coding and domain without math)
+- Data Engineer: Focused on managing data pipelines, databases, and back-end hardware and software.
+- Big Data Engineer: Focused on computer science, mathematics, and working with machine learning algorithms and data products.
+- Research Scientist: Specializing in a specific domain, with a strong background in statistics and mathematics.
+- Analyst: Focused on business analytics, web analytics, and working with structured data using SQL.
+- Business Intelligence: Focused on extracting insights from business-relevant data.
+- Entrepreneur: Combining data and business knowledge to drive creative solutions.
+- Full-Stack Unicorn: Possessing a diverse skill set across multiple areas of data science.
 
-DS pathway:
-1. planning:
-    - define goals
-    - organize resources
-    - coordinate people
-    - schedule project
-2. Data preparation:
-    - gather data
-    - clean data
-    - explore data
-    - refine data
-3. Modeling:
-    - create model
-    - validate model
-    - evaluate model
-    - refine model
-4. Follow-up:
-    - present model
-    - deploy model
-    - monitor model
-    - archive assets
-isn't just technical context is important
+Data science is a diverse field with various roles, skills, and goals.
 
-#### Roles in data science
-- Data engineer: focus on back end hardware and software, manage data pipelines, databases, etc.
-- Big data engineer: focus on computer science and math, ML and data products
-- Research scientist: focus on specific domain, statistics and math
-- Analyst: focus on business, web analytics, SQL; structured data
-- Business intelligence: focus on business relevant data
-- Entrepreneur: need data & business, creative throughout
-- Full-stack unicorn
+## Big Data
 
-DS is diverse, different roles, different skills, different goals
+Big data involves handling data that is characterized by its volume, velocity, and variety. It requires expertise in coding, statistics, and domain knowledge to extract meaningful insights from massive datasets.
 
-#### Big data
-![](https://i.imgur.com/Mxawmc3.png)
+![Big Data](https://i.imgur.com/Mxawmc3.png)
 
-Big data science:
-- volume, velocity, variety in data
-- coding, stat, domain expertise
+## Data Science vs. Statistics
 
-#### Data science vs statistics
-- most ds are not statisticians
-- ml and big data are not shared with statistics
-- data science is not a subset of statistics
-- both analyze data, but different goals, niches
+While data science and statistics share the common goal of analyzing data, they have distinct differences:
 
-============================================================
-<br>
-Data gathering:
-- existing data: in house, public, commercial
-- APIs: application programming interface
-- scraping: web scraping, screen scraping, data scraping
-- make your own data: surveys, experiments
+- Most data scientists are not statisticians. Data science involves additional components such as coding and working with big data that are not typically emphasized in traditional statistics.
+- Machine learning and big data are areas that are not commonly associated with traditional statistics.
+- Data science is not merely a subset of statistics; it encompasses a broader range of skills and methodologies.
 
-Math:
-- calculus
-- linear algebra
-- probability
-- Bayes theorem
-- Big O notation
+## Data Gathering
 
-Statistics: (find patterns in data)
-- exploratory graphics
-- exploratory statistics
-- descriptive stats
+Data gathering involves various methods, including utilizing existing data, APIs, and web scraping, as well as creating your own data through surveys and experiments.
 
-ML: (categorize & predict)
-- Dimensionality reduction
-- Clustering
-- K-Means
-- Anomaly detection
-- Categories: Logistic regression, kNN, Naive Bayes, SVM, Decision trees, Neural networks
-- Prediction: Linear regression, Poisson regression, Ensemble models
-<br>
-<br>
+Mathematical foundations play a crucial role in data science and include topics such as linear algebra, calculus, probability, Bayes' theorem, and understanding Big O notation.
 
-### Existing Data sourcing
-1. - in house:
-     - can be fast and easy
-     - Format?
-     - Documentation?
-     - Quality?
-     - Restrictions?
-<br>
-<br>
-    - public:
-          - data.gov; open-data.europa.eu
-          - unicef.org/statistics; who.int/gho
-          - pewinternet.org/datasets
-          - developer.nytimes.com
-          - google.com/publicdata
-          - aws.amazon.com/datasets
-      - PRO: Valuable, range of topics, well formatted and documented
-      - CON: Bias sampling, meaning not clear, Need to share ana, issues with privacy & confidentiality
-  <br>
-  <br>
-    - commercial - Third party data vendors
-        - DaaS: Data as a service
-        - Many topics, many formats
-        - Nielsen (media), Experian, Acxiom (marketing data), Dunnhumby
-        - PRO: Well formatted, well documented, high quality
-        - CON: Expensive, restrictions on use, privacy & confidentiality
+## Existing Data Sourcing
 
-2. APIs
-    - REST: Representational state transfer
-       - access to data via HTTP
-       - JSON
+There are three primary sources for existing data:
+
+1. In-house: Data that is readily available within an organization. Considerations include data format, documentation, quality, and any restrictions on its use.
+2. Public: Data available from public sources, such as government repositories, research organizations, and open data platforms. Public data offers a wide range of topics, but it may have biases and privacy/confidentiality concerns.
+3. Commercial: Third-party data vendors provide access to a variety of data sets for a fee. While commercial data is well-formatted and documented, it can be expensive and subject to restrictions on use and privacy/confidentiality issues.
+
+## APIs
+
+Application Programming Interfaces (APIs) provide a standardized way to access and retrieve data. Different types of APIs include REST APIs, social media APIs, and visual APIs. APIs can be accessed using various programming languages such as R
+
+- REST: Representational state transfer
+  - Access to data via HTTP
+  - JSON format
+
 - Social media APIs
-    - Twitter, Facebook, Instagram, LinkedIn, etc.
+  - Twitter, Facebook, Instagram, LinkedIn, etc.
+
 - Visual APIs
-    - Google Maps, Flickr, YouTube, etc.
-    - Accu Weather, Open Weather Map
-- R, Python, Bash
+  - Google Maps, Flickr, YouTube, etc.
+  - Accu Weather, Open Weather Map
 
-3. Scraping
-    - Web scraping
-        - HTML text, HTML tables, pdf-s, media
-    - APPS
-        - import.io
-        - ScraperWiki
-        - Tabula
-        - Google Sheets
-        - Excel
-        - R, Python, Bash, php
-    - PRO: Fast, easy, cheap
-    - CON: Legal issues, technical issues, ethical issues
+- Programming Languages
+  - R, Python, Bash
 
+## Make Your Own Data
 
-### Make your own data
 1. Interviews
-    - new topic, audience, you need find ways to improve
-    - Structured interviews
-        - same questions, same order
-        - PRO: easy to analyze
-        - CON: not flexible
-    - Unstructured interviews
-        - PRO: flexible
-        - CON: hard to analyze
-    - Time consuming, training, analysis
-    - Best for new topics & audiences
+   - Structured interviews
+     - Same questions, same order
+     - PRO: Easy to analyze
+     - CON: Not flexible
+   - Unstructured interviews
+     - PRO: Flexible
+     - CON: Hard to analyze
+   - Time-consuming, training, analysis
+   - Best for new topics & audiences
 
-2. Card sorting
-   - mental model (how people think about a topic intuitively)
-   - write topics on cards, ask people to sort them
-   - Calculate dissimilarity index
+2. Card Sorting
+   - Mental model (how people think about a topic intuitively)
    - Generative card sorting
-     - respondents create their own categories
-     - used to create website
+     - Respondents create their own categories
+     - Used to create a website
    - Evaluative card sorting
-     - respondents sort cards into pre-defined categories
-     - used to evaluate website
+     - Respondents sort cards into pre-defined categories
+     - Used to evaluate a website
    - Dendrograms (hierarchical clustering)
-   - Digital card sorting
-     -  Optimal Workshop
-     -  UserZoom
-     -  UX Suite
+   - Digital card sorting tools
+     - Optimal Workshop
+     - UserZoom
+     - UX Suite
 
-3. Lab experiments
- - cause and effect
- - Researcher controls the environment
-   - Focus research
-   - Hypothesis driven
-   - Random assignment
-   - Confounds & artifacts
- - Eye tracking in WEB design
- - Expensive, time consuming, labor intensive, requires expertise and training
+3. Lab Experiments
+   - Cause and effect
+   - Researcher controls the environment
+   - Eye tracking in web design
+   - Expensive, time-consuming, labor-intensive, requires expertise and training
 
-4. A/B testing
- - compare two versions of a website
- - Randomly assign users to one of two versions
- - Measure performance, response rate (clicks, purchases, etc.)
- - Implement the best version
- - software: Optimizely, VWO
- - PRO: Easy, fast, cheap
- - CON: Limited to website, limited to two versions, limited to performance
+4. A/B Testing
+   - Compare two versions of a website
+   - Randomly assign users to one of two versions
+   - Measure performance, response rate (clicks, purchases, etc.)
+   - Implement the best version
+   - Software: Optimizely, VWO
+   - PRO: Easy, fast, cheap
+   - CON: Limited to website, limited to two versions, limited to performance
 
 5. Surveys
    - Questionnaires
-   - closed-ended questions
-   - open-ended questions
-   - in person, phone, mail, email, web
-   - survey monkey, google forms, typeform, Qualtrics
+   - Closed-ended questions
+   - Open-ended questions
+   - In person, phone, mail, email, web
+   - Survey platforms: SurveyMonkey, Google Forms, Typeform, Qualtrics
    - PRO: Easy, fast, cheap
    - CON: Limited to questions, limited to responses, watch out for bias
-   - Beware the push poll (biased questions)
-<br>
-<br>
 
-### Coding (manipulate data)
+### Coding (Manipulate Data)
 
-data tools != data science
+Data tools != data science
 
-- spreadsheets, Tableau (visualization), Web data
-- R, Python, SQL
-- C, C++, Java, Bash, Regex
+- Spreadsheets, Tableau (visualization), Web data
+- Programming languages: R, Python, SQL
+- Other languages: C, C++, Java, Bash, Regex
 
 1. Applications
    - Excel, Google Sheets
-     - they are everywhere, clients use them
-     - data transfer (csv)
-     - data browsing, sorting, rearranging, find and replace
-     - formatting, transposing, tracking changes, pivot tables, arranging output
-     - Tidy data:
-        - for transferring data
-        - columns == variables
-        - rows ==  case
-        - One sheet per file
-        - one level per file
-  <br>
-  <br>
+     - Data transfer (CSV)
+     - Data browsing, sorting, rearranging, find and replace
+     - Formatting, transposing, tracking changes, pivot tables, arranging output
+     - Tidy data principles
 
    - Tableau and Tableau Public
-    - Visualization
-    - drag and drop
-   <br>
-   <br>
+     - Visualization
+     - Drag and drop interface
 
    - SPSS
      - Statistical package for the social sciences
-     - ibm.com/spss
-     - automate data analysis with syntax
- <br>
- <br>
+     - Automate data analysis with syntax
 
    - JASP
-     - open source
-     - jasp-stats.org
-     - alternative to SPSS
-     - you can share your analysis with OSF.io
-  <br>
-  <br>
+     - Open-source alternative to SPSS
+     - Share analysis with OSF.io
 
    - Other statistical software
-     - SAS
-     - JMP (visualization)
-     - Stata
-     - Minitab
-     - Matlab
-     - Mathematica
-     - Wolfram Alpha
-     - Data mining:
-       - rapidminer
-       - KNIME
-       - Orange
-     - BigMl
-     - Sofa Statistics
-     - Past 3
-     - StatCrunch
-     - XLSTAT
- <br>
- <br>
-  - HTML
-      - uses tags to mark up text
-      - defines structure of web pages
- <br>
- <br>
-  - XML
-    - semi-structured data
-    - markup language, alow commenting and metadata
-    - Tags define structure of data
-    - Tags can be user defined
-    - WEB data, MS office, ITunes, Data files
-    - Tags using angle brackets
-      <br>
-      <#genere></#genere>
-      <#composer></#composer>
-      <br>
-    - convertible XML ---> CSV; HTML ---> XML; CSV ---> XML
-  <br>
-  <br>
-    - JSON
+     - SAS, JMP, Stata, Minitab, Matlab, Mathematica, Wolfram Alpha, Data mining tools
+
+   - HTML
+     - Defines the structure of web pages
+
+   - XML
+     - Semi-structured data
+     - Markup language, allows commenting and metadata
+
+   - JSON
      - JavaScript Object Notation
-     - semi-structured data
-     - design for data interchange
-     - corresponds with data structures
-     - shorter than XML
-     - taking over XML
-     - east to convert
+     - Semi-structured data
+     - Design for data interchange
 
-2. Coding languages
-  - R
-     - free & open source
-     - vector operations
-     - 7k+ packages (CRAN cran.rstudio.com; Crantastic crantastic.org ---> show popular packages & updates)
-     - IDS: RStudio, Jupyter
-     - idiosyncratic syntax
-  <br>
-  <br>
-  - Python
-     - Only general purpose language for data science
-     - NumPy, SciPy, Pandas, Matplotlib, Seaborn, Scikit-learn
-  <br>
-  <br>
-  - SQL
-    - Structured Query Language
-    - Relational databases, STRUCTURED data
-    - RDBMS: Relational database management system (MySQL, PostgreSQL, SQLite, Oracle, Microsoft SQL Server)
-    - SELECT, FROM, WHERE, GROUP BY, ORDER BY, JOIN
-  <br>
-  <br>
-   - C, C++, Java:
-     - low level, high performance
-     - fast & stable
-     - java is based on C/C++
-       - WORA (write once, run anywhere)
-     - data's backed
-  <br>
-  <br>
+2. Coding Languages
+   - R
+     - Free & open source
+     - Extensive package ecosystem
+     - Integrated Development Environments: RStudio, Jupyter
+
+   - Python
+     - General-purpose language for data science
+     - Libraries: NumPy, SciPy, Pandas, Matplotlib, Seaborn, Scikit-learn
+
+   - SQL
+     - Structured Query Language
+     - Relational databases, structured data
+     - RDBMS: MySQL, PostgreSQL, SQLite, Oracle, Microsoft SQL Server
+
+   - C, C++, Java
+     - Low-level, high-performance languages
+     - Used for data processing and analysis
+
    - Bash
-     - CLI
-     - method of interacting with computer at CLI level
-     - scripting
-     - build in utilities:
-       - cat
-       - awk
-       - grep
-       - sed
-       - head & tail
-       - sort
-       - wc
-       - printf
-     - install packages
-       - jq
-       - json2csv
-       - Rio
-       - BigMler (access to BigML API)
-  <br>
-  <br>
-   - Regex
-    - from of pattern matching
-    - specific & general
-    - Elements:
-      - Literal characters
-      - Metacharacters
-      - Escaped sequences
-      - Search expression
-      - Target string
-          - ^: start of string (Ex: ^a); start with a
-          - $: end of string (Ex: a$); end with a
-          - .: any character (Ex: a.c); a + any character + c
-     - regex.alf.nu
-     - use for the find right data
-<br>
-<br>
+     - Command-line interface scripting
+     - Built-in utilities for data manipulation
+     - Installable packages for extended functionality
 
-### Mathematical foundations
+   - Regex
+     - Pattern matching for finding specific data
+
+### Mathematical Foundations
 
 - Linear algebra
 - Systems of linear equations
@@ -381,31 +198,10 @@ data tools != data science
 - Big O notation
 - Probability
 - Bayes' theorem
-<br>
-<br>
 
-### Statistics in data science
+### Statistics in Data Science
 
-- Methods
-  - Descriptive statistics
-  - Inferential statistics
-  - Hypothesis testing
-  - Estimation
-<br>
-<br>
-
-
-# Link to original content:
-1. [Data Science Introduction](https://www.youtube.com/watch?v=ua-CiDNNj30&list=PLkNZMXPAMnwPWawqMHs5Y2Q5B3Sh5Iwbo&index=2)
-2. [Data Structures](https://www.youtube.com/watch?v=zg9ih6SVACc&list=PLkNZMXPAMnwPWawqMHs5Y2Q5B3Sh5Iwbo&index=3&t=115s)
-
-
-
-
-
-
-
-
-
-
-
+- Descriptive statistics
+- Inferential statistics
+- Hypothesis testing
+- Estimation
