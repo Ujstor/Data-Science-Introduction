@@ -103,6 +103,7 @@ ML: (categorize & predict)
 - Prediction: Linear regression, Poisson regression, Ensemble models
 <br>
 <br>
+
 ### Existing Data sourcing
 1. - in house:
      - can be fast and easy
@@ -214,6 +215,7 @@ ML: (categorize & predict)
    - Beware the push poll (biased questions)
 <br>
 <br>
+
 ### Coding (manipulate data)
 
 data tools != data science
@@ -370,6 +372,7 @@ data tools != data science
      - use for the find right data
 <br>
 <br>
+
 ### Mathematical foundations
 
 - Linear algebra
@@ -380,6 +383,7 @@ data tools != data science
 - Bayes' theorem
 <br>
 <br>
+
 ### Statistics in data science
 
 - Methods

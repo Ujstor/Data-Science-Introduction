@@ -3,43 +3,23 @@ Short steps for downloading, setting up, and importing the `classicmodels.db` fi
 
 1. Download the `classicmodels.db` file.
 
-2. Install MySQL: Visit the official MySQL website (https://dev.mysql.com/downloads/) and download the appropriate version of MySQL for your operating system.
+2. Install MySQL: Visit the official MySQL website (https://dev.mysql.com/downloads/) and download the appropriate version of MySQL for your operating system. Follow the instructions to install MySQL on your system. You may be prompted to set a root password for MySQL during the installation process. Make sure to remember this password, as you'll need it to import the `classicmodels.db` file.
 
-3. Launch the MySQL server: Start the MySQL server using the installed MySQL software. The process for starting the server may vary depending on your operating system.
-
-4. Access the MySQL command-line interface: Open a terminal or command prompt and access the MySQL command-line interface (CLI) by typing the following command and pressing Enter:
+3. Run the import command: Execute the following command to import the `classicmodels.db` :
 
    ```
-   mysql -u root -p
+   mysql -u root -p < classicmodels.db
    ```
 
-   You may be prompted to enter the MySQL root password that you set during the installation process.
+   You may be prompted to enter the MySQL root password.
 
-5. Create a new database: Once you're in the MySQL CLI, create a new database to import the `classicmodels.db` file into. You can use the following command to create a new database:
-
-   ```
-   CREATE DATABASE database_name;
-   ```
-
-   Replace `database_name` with your desired name for the database.
-
-6. Exit the MySQL CLI: After creating the database, exit the MySQL CLI by typing `exit` and pressing Enter.
-
-7. Run the import command: Execute the following command to import the `classicmodels.db` file into the previously created database:
-
-   ```
-   mysql -u root -p database_name < classicmodels.db
-   ```
-
-   Replace `database_name` with the name of the database you created earlier. You may be prompted to enter the MySQL root password.
-
-8.  Verify the imported data: Re-access the MySQL CLI using the `mysql -u root -p` command. Switch to the imported database using the following command:
+4.  Verify the imported data: Re-access the MySQL CLI using the `mysql -u root -p` command. Switch to the imported database using the following command:
 
     ```
-    USE database_name;
+    USE classicmodels;
     ```
 
-    Replace `database_name` with the name of your imported database. You can then run SQL queries to verify that the data from the `classicmodels.db` file has been successfully imported into the database.
+    You can then run SQL queries to verify that the data from the `classicmodels.db` file has been successfully imported into the database.
 <br><br>
 
 ## Entity Relationship (ER) Diagram
@@ -83,5 +63,7 @@ SELECT YEAR(paymentDate) as `year`,
 
 
 
-
-[SQL Tutorial for Beginners](https://www.youtube.com/watch?v=-fW2X7fh7Yg&t=10535s)
+<br><br>
+- [SQL Tutorial for Beginners](https://www.youtube.com/watch?v=-fW2X7fh7Yg&t=10535s)
+- [Relational Databases and SQL](https://jovian.com/aakashns/relational-databases-and-sql)
+- [Aggregation and Joins with SQL](https://jovian.com/aakashns/advanced-sql-aggregation-and-joins)
