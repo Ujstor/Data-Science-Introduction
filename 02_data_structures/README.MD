@@ -1,0 +1,2 @@
+1. [Data Structures Easy to Advanced Course - Full Tutorial from a Google Engineer](https://www.youtube.com/watch?v=RBSGKlAvoiM&list=PLkNZMXPAMnwPWawqMHs5Y2Q5B3Sh5Iwbo&index=22&t=14388s)
+2. [Data Structures - Computer Science Course for Beginners](https://www.youtube.com/watch?v=zg9ih6SVACc&list=PLkNZMXPAMnwPWawqMHs5Y2Q5B3Sh5Iwbo&index=3&t=115s)
