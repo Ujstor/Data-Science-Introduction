@@ -44,6 +44,8 @@ NumPy major contributions are:
 
 Let's develop on efficiency. In Python, **everything is an object**, which means that even simple ints are also objects, with all the required machinery to make object work. We call them "Boxed Ints". In contrast, NumPy uses primitive numeric types (floats, ints) which makes storing and computation efficient.
 
+[Numpy Hadbook](https://www.dropbox.com/s/7itbzzxe625ux5m/Numpy%20Handbook.pdf?dl=0)
+
 <img src="https://docs.google.com/drawings/d/e/2PACX-1vTkDtKYMUVdpfVb3TTpr_8rrVtpal2dOknUUEOu85wJ1RitzHHf5nsJqz1O0SnTt8BwgJjxXMYXyIqs/pub?w=726&h=396" />
 <br>
 <br>
@@ -70,3 +72,4 @@ Jupyter Notebook is widely used in data analysis, data science, research, and ed
 
 # Link to original content:
 - [Data Analysis with Python - Numpy, Pandas, Matplotlib, Seaborn](https://www.youtube.com/watch?v=r-uOLxNrNk8)
+- [NumPy Crash Course - Complete Tutorial](https://www.youtube.com/watch?v=9JUAPgtkKpI&t=1155s)

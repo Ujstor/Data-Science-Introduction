@@ -17,9 +17,9 @@ print(y_train.shape)
 print(y_train)
 
 
-plt.figure()
-plt.scatter(X[:, 0], X[:, 1], c=y, cmap=camp, edgecolor='k', s=20)
-plt.show()
+# plt.figure()
+# plt.scatter(X[:, 0], X[:, 1], c=y, cmap=camp, edgecolor='k', s=20)
+# plt.show()
 
 
 from knn import KNN

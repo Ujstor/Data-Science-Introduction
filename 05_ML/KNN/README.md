@@ -27,8 +27,9 @@ However, KNN has some limitations. It can be computationally expensive, especial
 To mitigate some of these limitations, techniques like feature scaling, dimensionality reduction, and using weighted distances can be employed.
 
 <br>
+<br>
 
-# Notes
+# Euclidean distance
 
 Euclidean distance between two points in n-dimensional space:
 
@@ -43,5 +44,66 @@ Euclidean Distance: ![equation](https://latex.codecogs.com/svg.latex?\color{whit
 And in 3D space, the formula would be:
 
 Euclidean Distance: ![equation](https://latex.codecogs.com/svg.latex?\color{white}\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2})
+
+<br>
+<br>
+
+# Data Set
+
+The dataset used is the Iris dataset, which is a widely used dataset in machine learning. It contains measurements of four features (sepal length, sepal width, petal length, and petal width) of three different species of Iris flowers (Setosa, Versicolor, and Virginica). The dataset is loaded using the `datasets.load_iris()` function from the scikit-learn library.
+
+Here's a breakdown of the code:
+
+1. Import necessary libraries and define a color map for visualization:
+   ```python
+   import numpy as np
+   from sklearn import datasets
+   from sklearn.model_selection import train_test_split
+   import matplotlib.pyplot as plt
+   from matplotlib.colors import ListedColormap
+   
+   camp = ListedColormap(['#FF0000', '#00FF00', '#0000FF'])
+   ```
+
+   The required libraries are imported, including NumPy, scikit-learn's datasets module, Matplotlib, and a color map (`ListedColormap`) for plotting.
+
+2. Load and split the Iris dataset into training and testing sets:
+   ```python
+   iris = datasets.load_iris()
+   X, y = iris.data, iris.target
+   
+   X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=1234)
+   ```
+
+   The Iris dataset is loaded using `datasets.load_iris()`. The features are stored in `X`, and the corresponding labels are stored in `y`. The dataset is then split into training and testing sets using `train_test_split()` function from scikit-learn. The training set consists of 75% of the data, while the remaining 25% is used for testing.
+   - `X` represents the feature matrix and contains the measurements of the attributes of Iris flowers. Each row in `X` corresponds to a single flower, and each column represents a different attribute.
+   - `y` represents the target vector and contains the corresponding species labels for each flower in `X`.
+  
+  
+
+1. Instantiate and train the KNN classifier:
+   ```python
+   from knn import KNN
+   
+   clf = KNN(k=3)
+   clf.fit(X_train, y_train)
+   ```
+
+   The code imports a custom KNN class from a file named `knn.py` and creates an instance of this class with `k=3`, indicating that the KNN algorithm will be used with 3 neighbors. The classifier is then trained on the training data and labels using the `fit()` method.
+
+2. Make predictions on the test data:
+   ```python
+   predictions = clf.predict(X_test)
+   ```
+
+   The trained classifier is used to make predictions on the test data (`X_test`) using the `predict()` method of the KNN class.
+
+3. Calculate and print the accuracy of the classifier:
+   ```python
+   acc = np.sum(predictions == y_test) / len(y_test)
+   print(acc)
+   ```
+
+   The code calculates the accuracy of the classifier by comparing the predicted labels (`predictions`) with the true labels of the test data (`y_test`). The accuracy is computed as the ratio of correct predictions to the total number of test samples and is then printed.
 
 

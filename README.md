@@ -3,14 +3,14 @@
 This repository provides an introduction to the field of data science, covering fundamental concepts, processes, and tools. It is designed to be a valuable resource for individuals at all levels of expertise, whether you are a novice data enthusiast, a budding data scientist, or an experienced professional looking to refresh your knowledge.
 
 ## Data Science
+<img src="https://i.imgur.com/KT8f09M.png"
+    style="width:300px; float: right; margin: 0 40px 40px 40px;"></img>
 
 Data science encompasses the integration of coding, statistics, and domain expertise to extract valuable insights and knowledge from data. The key components of data science include:
 
 - Coding: Gathering and preparing data, performing statistical analysis using programming languages such as R and Python, working with databases using SQL, utilizing command line tools, and leveraging search engines through regular expressions.
 - Math: Understanding mathematical concepts such as probability, algebra, and regression to analyze data effectively.
 - Domain Expertise: Possessing expertise in a specific field, understanding the goals, methods, and constraints related to that domain.
-
-![Data Science Components](https://i.imgur.com/KT8f09M.png)
 
 Different roles in data science require varying skills and knowledge. Some of these roles include:
 
@@ -25,10 +25,10 @@ Different roles in data science require varying skills and knowledge. Some of th
 Data science is a diverse field with various roles, skills, and goals.
 
 ## Big Data
+<img src="https://i.imgur.com/Mxawmc3.png"
+    style="width:300px; float: right; margin: 0 40px 40px 40px;"></img>
 
 Big data involves handling data that is characterized by its volume, velocity, and variety. It requires expertise in coding, statistics, and domain knowledge to extract meaningful insights from massive datasets.
-
-![Big Data](https://i.imgur.com/Mxawmc3.png)
 
 ## Data Science vs. Statistics
 
