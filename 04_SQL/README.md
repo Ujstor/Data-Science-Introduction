@@ -67,3 +67,4 @@ SELECT YEAR(paymentDate) as `year`,
 - [SQL Tutorial for Beginners](https://www.youtube.com/watch?v=-fW2X7fh7Yg&t=10535s)
 - [Relational Databases and SQL](https://jovian.com/aakashns/relational-databases-and-sql)
 - [Aggregation and Joins with SQL](https://jovian.com/aakashns/advanced-sql-aggregation-and-joins)
+- [SQL Advanced tutorial](https://www.youtube.com/watch?v=M-55BmjOuXY)

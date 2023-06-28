@@ -61,7 +61,7 @@ Here's a breakdown of the code:
    from sklearn.model_selection import train_test_split
    import matplotlib.pyplot as plt
    from matplotlib.colors import ListedColormap
-   
+
    camp = ListedColormap(['#FF0000', '#00FF00', '#0000FF'])
    ```
 
@@ -71,20 +71,20 @@ Here's a breakdown of the code:
    ```python
    iris = datasets.load_iris()
    X, y = iris.data, iris.target
-   
+
    X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=1234)
    ```
 
    The Iris dataset is loaded using `datasets.load_iris()`. The features are stored in `X`, and the corresponding labels are stored in `y`. The dataset is then split into training and testing sets using `train_test_split()` function from scikit-learn. The training set consists of 75% of the data, while the remaining 25% is used for testing.
    - `X` represents the feature matrix and contains the measurements of the attributes of Iris flowers. Each row in `X` corresponds to a single flower, and each column represents a different attribute.
    - `y` represents the target vector and contains the corresponding species labels for each flower in `X`.
-  
-  
+
+
 
 1. Instantiate and train the KNN classifier:
    ```python
    from knn import KNN
-   
+
    clf = KNN(k=3)
    clf.fit(X_train, y_train)
    ```
@@ -105,5 +105,3 @@ Here's a breakdown of the code:
    ```
 
    The code calculates the accuracy of the classifier by comparing the predicted labels (`predictions`) with the true labels of the test data (`y_test`). The accuracy is computed as the ratio of correct predictions to the total number of test samples and is then printed.
-
-
