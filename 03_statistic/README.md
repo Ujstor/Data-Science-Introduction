@@ -97,3 +97,11 @@ where \(x_1\) and \(x_2\) are the means of the groups, and \(s\) is the "pooled 
 These summary statistics provide valuable insights into the dataset and help understand its central tendency, dispersion, and shape.
 
 
+# Probability Mass Function (PMF)
+
+Probability mass functions (PMFs) are used in probability theory to describe the probabilities of discrete random variables. A discrete random variable is a variable that can take on a countable number of distinct values. PMFs are used to answer questions such as "What is the probability of a given outcome?" or "What is the probability of an outcome less than a given value?" 
+
+Another way to represent a distribution, which maps from each value to its probability. A probability is a frequency expressed as a fraction of the sample size, n. To get from frequencies to probabilities, we divide through by n, which is called normalization.
+
+A probability mass function assigns probabilities to each possible value of a discrete random variable. It gives the probability that the random variable takes on a specific value. The sum of the probabilities assigned by the PMF to all possible values of the random variable is equal to 1.
+
