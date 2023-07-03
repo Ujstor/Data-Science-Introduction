@@ -1,0 +1,40 @@
+05/02/2023 08:26:17 PM:DEBUG:This is a debug message
+05/02/2023 08:26:17 PM:INFO:This is an info message
+05/02/2023 08:26:17 PM:WARNING:This is a warning message
+05/02/2023 08:26:17 PM:ERROR:This is an error message
+05/02/2023 08:26:17 PM:CRITICAL:This is a critical message
+05/02/2023 08:26:27 PM:DEBUG:This is a debug message
+05/02/2023 08:26:27 PM:INFO:This is an info message
+05/02/2023 08:26:27 PM:WARNING:This is a warning message
+05/02/2023 08:26:27 PM:ERROR:This is an error message
+05/02/2023 08:26:27 PM:CRITICAL:This is a critical message
+05/02/2023 08:26:31 PM:DEBUG:This is a debug message
+05/02/2023 08:26:31 PM:INFO:This is an info message
+05/02/2023 08:26:31 PM:WARNING:This is a warning message
+05/02/2023 08:26:31 PM:ERROR:This is an error message
+05/02/2023 08:26:31 PM:CRITICAL:This is a critical message
+05/02/2023 08:26:39 PM:DEBUG:This is a debug message
+05/02/2023 08:26:39 PM:INFO:This is an info message
+05/02/2023 08:26:39 PM:WARNING:This is a warning message
+05/02/2023 08:26:39 PM:ERROR:This is an error message
+05/02/2023 08:26:39 PM:CRITICAL:This is a critical message
+05/02/2023 08:26:58:DEBUG:This is a debug message
+05/02/2023 08:26:58:INFO:This is an info message
+05/02/2023 08:26:58:WARNING:This is a warning message
+05/02/2023 08:26:58:ERROR:This is an error message
+05/02/2023 08:26:58:CRITICAL:This is a critical message
+05/02/2023 08:27:20:DEBUG:This is a debug message
+05/02/2023 08:27:20:INFO:This is an info message
+05/02/2023 08:27:20:WARNING:This is a warning message
+05/02/2023 08:27:20:ERROR:This is an error message
+05/02/2023 08:27:20:CRITICAL:This is a critical message
+05/02/2023 08:27:42:DEBUG:This is a debug message
+05/02/2023 08:27:42:INFO:This is an info message
+05/02/2023 08:27:42:WARNING:This is a warning message
+05/02/2023 08:27:42:ERROR:This is an error message
+05/02/2023 08:27:42:CRITICAL:This is a critical message
+05/02/2023 08:27:57:DEBUG:This is a debug message
+05/02/2023 08:27:57:INFO:This is an info message
+05/02/2023 08:27:57:WARNING:This is a warning message
+05/02/2023 08:27:57:ERROR:This is an error message
+05/02/2023 08:27:57:CRITICAL:This is a critical message
