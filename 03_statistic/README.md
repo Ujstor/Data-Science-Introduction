@@ -30,18 +30,26 @@ Example:
 Given a dataset [3, 4, 5, 6, 7], the mean is 5.
 
 
-![Mean Formula](https://latex.codecogs.com/png.latex?\dpi{120}&space;\bg_white&space;\fn_phv&space;\large&space;\text{mean}&space;=&space;\frac{1}{n}\sum_{i=1}^{n}x_i)
+![Mean Formula](https://latex.codecogs.com/svg.image?\bg{white}\colorbox{white}{$\displaystyle\bar{X}=\frac{1}{n}\sum_{i=1}^{n}X_i$})
 
 ## Median
 
-The median represents the middle value in a sorted dataset, dividing it into two equal halves.
+The median is a statistical measure used to describe the central tendency of a dataset. It represents the middle value when the data points are arranged in ascending or descending order.
 
-Example:
-Given a dataset [3, 4, 5, 6, 7], the median is 5.
+For a dataset with an odd number of data points, the median is the value that separates the lower and upper halves of the dataset. It is the middle value when the data points are arranged in order.
+
+For a dataset with an even number of data points, the median is the average of the two middle values. It is the average of the two values that divide the dataset into equal halves when arranged in order.
+
+The median is a robust measure of central tendency as it is less affected by extreme values or outliers compared to other measures like the mean
 
 Formula:
-If \(n\) is odd, the median is the value at position \(\frac{n+1}{2}\).
-If \(n\) is even, the median is the average of the values at positions \(\frac{n}{2}\) and \(\frac{n}{2} + 1\).
+If \(n\) is odd, the median is the value at position 
+
+![](https://latex.codecogs.com/svg.image?\colorbox{white}{$\displaystyle\text{Median}=X_{\left(\frac{n&plus;1}{2}\right)}$})
+
+If \(n\) is even, the median is the average of the values at positions 
+
+![](https://latex.codecogs.com/svg.image?\colorbox{white}{$\displaystyle\text{Median}=\frac{X_{\left(\frac{n}{2}\right)}&plus;X_{\left(\frac{n}{2}&plus;1\right)}}{2}$})
 
 ## Mode
 
@@ -55,21 +63,26 @@ No specific formula - it is the value(s) that occur with the highest frequency.
 
 ## Variance
 
-The variance measures the spread or dispersion of a dataset around its mean.
+The variance is a statistical measure that quantifies the spread or dispersion of a dataset. It provides a measure of how far each value in the dataset is from the mean.
 
-Example:
-Given a dataset [3, 4, 5, 6, 7], the variance is calculated as:
+In mathematical terms, the variance is defined as the average of the squared differences between each data point and the mean.
 
-![Variance Formula](https://latex.codecogs.com/png.latex?\dpi{120}&space;\bg_white&space;\fn_phv&space;\large&space;\text{var}&space;=&space;\frac{1}{n}\sum_{i=1}^{n}(x_i-\text{mean})^2)
+
+
+![Variance Formula](https://latex.codecogs.com/svg.image?\bg{white}\colorbox{white}{$\displaystyle&space;S^2=\frac{1}{n-1}\sum_{i=1}^{n}(X_i-\bar{X})^2$})
+
+The formula calculates the squared difference between each data point and the mean, sums up these squared differences, and then divides the sum by the total number of data points.
+
+The variance provides a measure of the variability or spread of the dataset. A higher variance indicates that the data points are more dispersed around the mean, while a lower variance indicates that the data points are closer to the mean.
+
+It's worth noting that the formula shown above represents the population variance. For sample variance, the formula is adjusted by dividing the sum of squared differences by (n-1) instead of n.
 
 ## Standard Deviation
 
-The standard deviation is the square root of the variance, providing a measure of the dispersion around the mean.
+is a measure of the dispersion or variability of a dataset. It is calculated as the square root of the average of the squared differences between each data point and the mean. The formula provides a measure of how spread out the data is from the mean.
 
-Example:
-Given a dataset [3, 4, 5, 6, 7], the standard deviation is calculated as:
 
-![Standard Deviation Formula](https://latex.codecogs.com/png.latex?\dpi{120}&space;\bg_white&space;\fn_phv&space;\large&space;\text{std}&space;=&space;\sqrt{\text{var}})
+![Standard Deviation Formula](https://latex.codecogs.com/svg.image?\bg{white}\colorbox{white}{$\displaystyle\sigma=\sqrt{\frac{1}{n}\sum_{i=1}^{n}(X_i-\bar{X})^2}$})
 
 ## Range
 
@@ -84,24 +97,113 @@ Given a dataset [3, 4, 5, 6, 7], the range is 7 - 3 = 4.
 
 ## Effect Size: Cohen's d
 
-Another way to convey the size of the effect is to compare the difference between groups to the variability within groups. Cohen’s d is a statistic intended to do that.
-
+Cohen's d is an effect size measure commonly used to quantify the standardized difference between two group means. It helps assess the magnitude of the difference between two groups, taking into account the variability within each group.
 Cohen's d is defined as:
 
-![Cohen's d Formula](https://latex.codecogs.com/png.latex?\dpi{120}&space;\bg_white&space;\fn_phv&space;\large&space;d&space;=&space;\frac{{x_1&space;-&space;x_2}}{{s}})
+![Cohen's d Formula](https://latex.codecogs.com/svg.image?\bg{white}\colorbox{white}{$\displaystyle&space;d=\frac{\bar{X}_1-\bar{X}_2}{s}$})
 
-where \(x_1\) and \(x_2\) are the means of the groups, and \(s\) is the "pooled standard deviation".
+The pooled standard deviation (ss) is calculated using the formula:
+
+![](https://latex.codecogs.com/svg.image?\bg{white}\colorbox{white}{$\displaystyle&space;s=\sqrt{\frac{{(n_1-1)s_1^2&plus;(n_2-1)s_2^2}}{{n_1&plus;n_2-2}}}$})
+
+where:
+- \(n_1\) and \(n_2\) are the sample sizes of Group 1 and Group 2, respectively.
+- \(s_1\) and \(s_2\) are the standard deviations of Group 1 and Group 2, respectively.
 
 
 
-These summary statistics provide valuable insights into the dataset and help understand its central tendency, dispersion, and shape.
+Interpreting Cohen's d:
+Cohen proposed general guidelines to interpret the magnitude of Cohen's d:
+- Small effect size: \(d \approx 0.2\)
+- Medium effect size: \(d \approx 0.5\)
+- Large effect size: \(d \approx 0.8\)
+
+These guidelines help assess the practical significance of the difference between the group means.
+
+Cohen's d is widely used in various fields, such as psychology, education, and social sciences, to evaluate the impact or strength of an intervention, treatment, or experimental manipulation. It provides a standardized measure of effect size, allowing for comparisons across different studies or contexts.
 
 
 # Probability Mass Function (PMF)
 
-Probability mass functions (PMFs) are used in probability theory to describe the probabilities of discrete random variables. A discrete random variable is a variable that can take on a countable number of distinct values. PMFs are used to answer questions such as "What is the probability of a given outcome?" or "What is the probability of an outcome less than a given value?" 
+A Probability Mass Function (PMF) is a function that describes the probability distribution of a discrete random variable. It assigns probabilities to each possible value that the random variable can take.
 
-Another way to represent a distribution, which maps from each value to its probability. A probability is a frequency expressed as a fraction of the sample size, n. To get from frequencies to probabilities, we divide through by n, which is called normalization.
+Mathematically, the PMF of a discrete random variable X is defined as:
 
-A probability mass function assigns probabilities to each possible value of a discrete random variable. It gives the probability that the random variable takes on a specific value. The sum of the probabilities assigned by the PMF to all possible values of the random variable is equal to 1.
+P(X = x)
+
+where P(X = x) represents the probability that X takes on the value x.
+
+Properties of a PMF include:
+
+1. Non-negativity: The PMF is non-negative, meaning that the probabilities assigned to each value are greater than or equal to zero.
+
+2. Sum of probabilities: The sum of all probabilities in the PMF is equal to 1. This implies that the random variable must take on one of the possible values.
+
+From the PMF, we can calculate various properties of the random variable. For example, the expected value or mean of a discrete random variable X can be calculated as:
+
+E(X) = ∑(x * P(X = x))
+
+where the summation is taken over all possible values of X.
+
+The PMF allows us to compute probabilities associated with specific events or intervals. For example, the probability that X equals a particular value x can be obtained directly from the PMF:
+
+P(X = x) = P(X = x)
+
+Additionally, the probability that X lies within a range [a, b] can be computed as the sum of the individual probabilities within that range:
+
+P(a ≤ X ≤ b) = ∑(P(X = x)) for all x in [a, b]
+
+The PMF is commonly used in probability theory and statistics to analyze and model discrete random variables, such as the outcomes of rolling a dice or the number of successes in a series of independent Bernoulli trials.
+
+# Precentiles
+
+Percentiles are statistical measures that divide a set of data into hundredths. They represent specific points in a distribution, indicating the relative position of a particular value within the dataset.
+
+To calculate a percentile, you first need to arrange the data in ascending order. Then, you can determine the position of a specific percentile using the following steps:
+
+1. Sort the data in ascending order.
+2. Calculate the rank of the percentile using the formula:
+   Rank = (P / 100) * (N + 1)
+   where P is the desired percentile (e.g., 50 for the median, 25 for the first quartile, 75 for the third quartile), and N is the total number of data points.
+3. If the rank is a whole number, the value corresponding to that position in the sorted dataset is the desired percentile.
+4. If the rank is not a whole number, round it up to the next whole number, and the percentile is the value at that position.
+
+For example, to find the median (50th percentile) of the dataset [2, 4, 6, 8, 10], you would follow these steps:
+
+1. Sort the data: [2, 4, 6, 8, 10]
+2. Calculate the rank: Rank = (50 / 100) * (5 + 1) = 3
+3. The rank is a whole number, so the value at the third position is the median, which is 6.
+
+Percentiles provide insights into the distribution of data and help identify specific points of interest. For instance, the first quartile (25th percentile) represents the value below which 25% of the data falls, and the third quartile (75th percentile) represents the value below which 75% of the data falls. The minimum value corresponds to the 0th percentile, and the maximum value corresponds to the 100th percentile.
+# Cumulative Distribution Function (CDF)
+
+A cumulative distribution function (CDF) is a function that represents the cumulative probability of a random variable taking on a value less than or equal to a given value. It is often used in probability theory and statistics to describe the distribution of a random variable.
+
+Mathematically, the CDF of a random variable X is defined as:
+
+F(x) = P(X ≤ x)
+
+where F(x) represents the cumulative probability that X takes on a value less than or equal to x. The CDF provides information about the probabilities associated with different values of X.
+
+Properties of a cumulative distribution function include:
+
+1. Monotonicity: The CDF is non-decreasing, meaning that as x increases, the cumulative probability also increases.
+
+2. Right-Continuity: The CDF is right-continuous, meaning that the cumulative probability does not have any jumps or discontinuities.
+
+From the CDF, we can calculate probabilities associated with specific intervals or events. For example, the probability that X lies within a particular range [a, b] can be computed as:
+
+P(a ≤ X ≤ b) = F(b) - F(a)
+
+Conversely, we can also obtain the probability of X being greater than a certain value by taking the complement of the CDF:
+
+P(X > a) = 1 - F(a)
+
+The CDF is closely related to the probability density function (PDF) of a random variable. In fact, the PDF can be derived from the CDF by taking the derivative. The relationship is given by:
+
+f(x) = d/dx F(x)
+
+where f(x) represents the PDF.
+
+The CDF is a fundamental concept in probability and statistics, and it provides a way to analyze and understand the behavior of random variables and their distributions.
 
