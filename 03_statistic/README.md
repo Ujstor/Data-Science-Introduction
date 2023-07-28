@@ -1,3 +1,13 @@
+Examples and Exercises from Think Stats, 2nd Edition
+
+http://thinkstats2.com
+
+Copyright 2016 Allen B. Downey
+
+MIT License: https://opensource.org/licenses/MIT
+
+![purple-divider](https://user-images.githubusercontent.com/7065401/52071927-c1cd7100-2562-11e9-908a-dde91ba14e59.png)
+
 # NSFG Cycle 6 (2002)
 The National Survey of Family Growth (NSFG) gathers information on pregnancy and births, marriage and cohabitation, infertility, use of contraception, family life, and general and reproductive health.
 
@@ -17,6 +27,8 @@ outcome is an integer code for the outcome of the pregnancy. The code 1 indicate
 - **finalwgt** is the statistical weight associated with the respondent. It is a floating-point value that indicates the number of people in the U.S. population this respondent represents.
 
 <br>
+
+![green-divider](https://user-images.githubusercontent.com/7065401/52071924-c003ad80-2562-11e9-8297-1c6595f8a7ff.png)
 
 # Dataset Summary Statistics
 
@@ -122,6 +134,7 @@ These guidelines help assess the practical significance of the difference betwee
 
 Cohen's d is widely used in various fields, such as psychology, education, and social sciences, to evaluate the impact or strength of an intervention, treatment, or experimental manipulation. It provides a standardized measure of effect size, allowing for comparisons across different studies or contexts.
 
+![green-divider](https://user-images.githubusercontent.com/7065401/52071924-c003ad80-2562-11e9-8297-1c6595f8a7ff.png)
 
 # Probability Mass Function (PMF)
 
@@ -155,6 +168,7 @@ P(a ≤ X ≤ b) = ∑(P(X = x)) for all x in [a, b]
 
 The PMF is commonly used in probability theory and statistics to analyze and model discrete random variables, such as the outcomes of rolling a dice or the number of successes in a series of independent Bernoulli trials.
 
+![green-divider](https://user-images.githubusercontent.com/7065401/52071924-c003ad80-2562-11e9-8297-1c6595f8a7ff.png)
 # Precentiles
 
 Percentiles are statistical measures that divide a set of data into hundredths. They represent specific points in a distribution, indicating the relative position of a particular value within the dataset.
@@ -175,6 +189,8 @@ For example, to find the median (50th percentile) of the dataset [2, 4, 6, 8, 10
 3. The rank is a whole number, so the value at the third position is the median, which is 6.
 
 Percentiles provide insights into the distribution of data and help identify specific points of interest. For instance, the first quartile (25th percentile) represents the value below which 25% of the data falls, and the third quartile (75th percentile) represents the value below which 75% of the data falls. The minimum value corresponds to the 0th percentile, and the maximum value corresponds to the 100th percentile.
+
+![green-divider](https://user-images.githubusercontent.com/7065401/52071924-c003ad80-2562-11e9-8297-1c6595f8a7ff.png)
 # Cumulative Distribution Function (CDF)
 
 A cumulative distribution function (CDF) is a function that represents the cumulative probability of a random variable taking on a value less than or equal to a given value. It is often used in probability theory and statistics to describe the distribution of a random variable.
@@ -206,4 +222,24 @@ f(x) = d/dx F(x)
 where f(x) represents the PDF.
 
 The CDF is a fundamental concept in probability and statistics, and it provides a way to analyze and understand the behavior of random variables and their distributions.
+
+![green-divider](https://user-images.githubusercontent.com/7065401/52071924-c003ad80-2562-11e9-8297-1c6595f8a7ff.png)
+
+# Modeling distributions
+Common analytic distributions and uses them to model data from a variety of sources:
+
+## Exponential distribution
+The probability density function (PDF) of the exponential distribution is given by:
+
+$f(x|\lambda) = \lambda \cdot e^{-\lambda x}$
+
+Where:
+- \( x \) is the random variable (usually representing time) for which we are calculating the probability density.
+- $\lambda$ is the rate parameter of the exponential distribution.
+
+The cumulative distribution function (CDF) for the exponential distribution is:
+
+$F(x|\lambda) = 1 - e^{-\lambda x}$
+
+These formulas describe the probability of an event occurring at a certain time \( x \) in the future, given a specific rate parameter $\lambda$that governs the rate of occurrence. The exponential distribution is commonly used in various fields, including reliability analysis, queuing theory, and survival analysis.
 
